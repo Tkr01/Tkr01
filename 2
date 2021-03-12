@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+ int size;
+ cout << "Enter the size: ";
+ cin >> size;
+ int stars=1;
+ do { int a = size; int b = stars;
+    ////////////////////////////////
+    do { 
+        cout<<' ';
+        a--; 
+        
+    } 
+    while (a!=0);
+    ///////////////////////////////
+    do { 
+        cout<<'*'; 
+        b--; 
+        
+    }
+    while (b!=0);
+    /////////////////////////////////
+    size-=1; stars+=1;
+    
+    cout<<endl;
+  } while (size>0);
+  
+return 0; 
+}
